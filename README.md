@@ -15,3 +15,15 @@ Para gerenciamento das dependências externas de forma automática foi utilizado
 ```
 go mod init github.com/augustopedro/hexagonal-go
 ```
+
+Caso vá desenvolver em Go é recomendado que instale a linguagem seguindo os passos:
+Run:
+```
+sudo apt update
+sudo apt upgrade
+```
+
+Instale a versão Go:
+```
+sudo apt install golang-go
+```

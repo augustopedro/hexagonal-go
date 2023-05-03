@@ -35,3 +35,8 @@ Para rodar os testes da aplicação, rode o comando na raiz do projeto:
 ```
 go test ./...
 ```
+
+Para gerar o mock da classe Product.go foi utilizado o seguinte comando dentro do container:
+```
+mockgen -destination=application/mocks/application.go -source=application/product.go application
+```

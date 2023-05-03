@@ -17,13 +17,21 @@ go mod init github.com/augustopedro/hexagonal-go
 ```
 
 Caso vá desenvolver em Go é recomendado que instale a linguagem seguindo os passos:
-Run:
-```
-sudo apt update
-sudo apt upgrade
-```
 
 Instale a versão Go:
 ```
-sudo apt install golang-go
+cd /home/seuUsuário
+wget https://go.dev/dl/go1.16.linux-amd64.tar.gz
+tar -xzvf go1.16.linux-amd64.tar.gz
+export PATH=$PATH:/home/seuUsuário/go/bin
+```
+
+Confirme que obteve a versão correta 1.16:
+```
+go version
+```
+
+Para rodar os testes da aplicação, rode o comando na raiz do projeto:
+```
+go test ./...
 ```

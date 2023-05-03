@@ -40,3 +40,24 @@ Para gerar o mock da classe Product.go foi utilizado o seguinte comando dentro d
 ```
 mockgen -destination=application/mocks/application.go -source=application/product.go application
 ```
+Para criar a tabela de produtos foi utilizado os seguintes comandos dentro do container:
+```
+touch db.sqlite
+sqlite3 db.sqlite
+create table products(id string, name string, price float, status string);
+```
+
+Para confirmar a criação da tabela utilize o comando:
+```
+.tables
+```
+
+Para rodar o arquivo main utilize o comando dentro do container:
+```
+go run main.go
+```
+
+Para buscar todos os produtos na tabela manualmente utilize o comando dentro do sqlite do container:
+```
+go run main.go
+```

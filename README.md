@@ -93,3 +93,18 @@ go run main.go cli -a=create -n="Product CLI" -p=25.0
 go run main.go cli -a=get --id=06668a69-ca18-4af5-867c-f3087b4c7135
 go run main.go cli -a=enable --id=06668a69-ca18-4af5-867c-f3087b4c7135
 ```
+
+Criação do http com cobrano container:
+```
+cobra-cli add http
+```
+
+Para iniciar nosso webservice rode o comando no container:
+```
+go run main.go http
+```
+
+Para testar a chamada exposta no webserver utilize o comando de exemplo:
+```
+curl http://localhost:9000/product/8600c92f-b5fc-4fc0-a6dd-493d126c5ab5
+```

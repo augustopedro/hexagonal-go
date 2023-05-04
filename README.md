@@ -91,4 +91,5 @@ Exemplos de comando cobra:
 ```
 go run main.go cli -a=create -n="Product CLI" -p=25.0
 go run main.go cli -a=get --id=06668a69-ca18-4af5-867c-f3087b4c7135
+go run main.go cli -a=enable --id=06668a69-ca18-4af5-867c-f3087b4c7135
 ```

@@ -47,7 +47,8 @@ func TestRun(t *testing.T) {
 	require.Nil(t, err)
 	require.Equal(t, expectedResult, result)
 
-	expectedResult = fmt.Sprintf("Product ID: %s\nName: %s\nPrice: %f\nStatus: %s", productId, productName, productPrice, productStatus)
+	expectedResult = fmt.Sprintf("Product ID: %s\nName: %s\nPrice: %f\nStatus: %s",
+		productId, productName, productPrice, productStatus)
 	result, err = cli.Run(serviceMock, "", productId, "", 0)
 	require.Nil(t, err)
 	require.Equal(t, expectedResult, result)

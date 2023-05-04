@@ -59,5 +59,36 @@ go run main.go
 
 Para buscar todos os produtos na tabela manualmente utilize o comando dentro do sqlite do container:
 ```
-go run main.go
+select * from products;
+```
+
+Para Inicializar sua aplicação cobra dentro do container:
+```
+cobra-cli init
+```
+
+Para executar seu arquivo main.go cobra:
+```
+go run main.go cli
+```
+
+Para limpar os pacotes que não estamos utilizando e baixar o que vamos precisar utilizando go mod:
+```
+go mod tidy
+```
+
+Para adicionar um novo comando cobra cli:
+```
+cobra-cli add cli
+```
+
+Para vizualizar comandos criados:
+```
+go run main.go cli --help
+```
+
+Exemplos de comando cobra:
+```
+go run main.go cli -a=create -n="Product CLI" -p=25.0
+go run main.go cli -a=get --id=06668a69-ca18-4af5-867c-f3087b4c7135
 ```
